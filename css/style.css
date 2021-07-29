@@ -1,0 +1,113 @@
+/* common css start */
+body{
+    font-family:PTSans-Bold ;
+    font-weight: 400;
+    color: #010101;
+}
+/* common css end */
+@font-face{
+    font-family:PTSans-Regular ;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family:PTSans-Bold ;
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+
+/* header css start */
+.header{
+    background:#fcdb00;
+    padding: 25px 0;
+}
+.my-menu ul li a{
+    display: inline-block;
+    margin: 0 45px;
+    padding: 0 !important;
+    color: #010101 !important;
+    font-size: 22px;
+    transition: .4s;
+    position: relative;   
+}
+.my-menu ul li:last-child a{
+    margin-right: 0;
+}
+.my-menu ul li a:hover{
+    color: #ffffff !important;
+}
+.my-menu ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width:0;
+    height: 2px;
+    background: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s; 
+}
+.my-menu ul li a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.my-menu ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+.my-menu ul li a:hover::before{
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+/* header css end */
+
+/* slider css start */
+.slider{
+    background: #fcdb00;
+    padding:10px 0 125px;
+
+}
+.slider-left-text{
+    margin-top: 60px;
+}
+.slider-left-text h1{
+    font-family:PTSans-Bold ;
+    margin-bottom: 15px;
+}
+.slider-left-text h5{
+    font-size: 20px;
+    color: #313841;
+    font-family:PTSans-Regular ;
+    margin-bottom: 15px;
+}
+.slider-left-text p{
+    font-family:PTSans-Regular ;
+    color:#555555 ;
+
+}
+
+.slider-s-store ul li i{
+    margin-right: 15px;
+    font-size:42px;
+    
+}
+.custom-indicator{
+    bottom:-100px;
+}
+.custom-indicator [data-bs-target] {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	margin-left: 5px;
+    border-radius: 50%;	
+}
+/* slider css end */
